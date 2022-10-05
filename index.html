@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeamLeed - LevelUp</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <nav class="header__nav">
+        <ul class="header__list" id="header__list_change">
+          <li class="header__item">
+            <a data-goto=".promo" href="#promo" class="header__link">Продукт №1</a>
+          </li>
+          <li class="header__item">
+            <a data-goto=".composition" href="#composition" class="header__link">Состав</a>
+          </li>
+          <li class="header__item">
+            <a data-goto=".testimonials" href="#testimonials" class="header__link">Отзывы</a>
+          </li>
+          <li class="header__item">
+            <a data-goto=".promo2" href="#promo2" class="header__link">Продукт №2</a>
+          </li>
+          <li class="header__item">
+            <a data-goto=".order" href="#order" class="header__link">Заказать</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__burger">
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="promo" class="promo">
+      <div class="container promo__container">
+        <video autoplay loop muted cover class="promo__bgvideo" id="bgvideo">
+          <source src="./video/promo.mp4" type="video/mp4"></source>
+        </video>
+        <div class="promo__product">
+          <div class="promo__product-bg">
+            <h2 class="promo__name">“LevelUp”. <br> Продукт для повышения потенции.</h2>
+            <div class="promo__content">
+              <div class="promo__image">
+                <img class="promo__image-product" src="./img/prod.png" alt="LevelUp">
+              </div>
+              <div class="promo__specifications">
+                <ul class="promo__list">
+                  <li class="promo__item">Быстрый</li>
+                  <li class="promo__item">Сильный</li>
+                  <li class="promo__item">Надежный</li>
+                </ul>
+              </div>
+            </div>
+            <button class="anchor__btn" type="submit">Заказать &#9660;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="composition" class="composition">
+      <div class="container composition__container">
+        <div class="composition__ingredients">
+          <figure class="composition__ingredient">
+            <img class="composition__image" src="./img/ingridient.jpg" alt="Силденафил">
+            <figcaption class="composition__name">Силденафил</figcaption>
+          </figure>
+          <figure class="composition__ingredient">
+            <img class="composition__image" src="./img/ingridient.jpg" alt="Целлюлоза">
+            <figcaption class="composition__name">Целлюлоза</figcaption>
+          </figure>
+          <figure class="composition__ingredient">
+            <img class="composition__image" src="./img/ingridient.jpg" alt="Кальций">
+            <figcaption class="composition__name">Кальций</figcaption>
+          </figure>
+        </div>
+        <div class="composition__product">
+          <img class="composition__image_product" src="./img/prod.png" alt="LevelUp">
+        </div>
+        <div class="composition__ingredients">
+          <figure class="composition__ingredient">
+            <img class="composition__image" src="./img/ingridient.jpg" alt="Мед">
+            <figcaption class="composition__name">Мед</figcaption>
+          </figure>
+          <figure class="composition__ingredient">
+            <img class="composition__image" src="./img/ingridient.jpg" alt="Шоколад">
+            <figcaption class="composition__name">Шоколад</figcaption>
+          </figure>
+          <figure class="composition__ingredient">
+            <img class="composition__image" src="./img/ingridient.jpg" alt="Орехи">
+            <figcaption class="composition__name">Орехи</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+      <div class="container testimonials__container">
+        <div class="testimonials__slider">
+          <div class="testimonials__slide">
+            <div class="testimonials__content">
+              <div class="testimonials__photo">
+                <img src="./img/avatar.png" alt="">
+              </div>
+              <span class="testimonials__name">Артем</span>
+              <p class="testimonials__comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, facilis cumque deleniti veritatis quibusdam voluptatibus. Eum neque illum, repudiandae quasi commodi molestias a est beatae, quod, perspiciatis aliquid ab natus.</p>
+            </div>
+          </div>
+          <div class="testimonials__slide">
+            <div class="testimonials__content">
+              <div class="testimonials__photo">
+                <img src="./img/avatar.png" alt="">
+              </div>
+              <span class="testimonials__name">Павел</span>
+              <p class="testimonials__comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, facilis cumque deleniti veritatis quibusdam voluptatibus. Eum neque illum, repudiandae quasi commodi molestias a est beatae, quod, perspiciatis aliquid ab natus.</p>
+            </div>
+          </div>
+          <div class="testimonials__slide">
+            <div class="testimonials__content">
+              <div class="testimonials__photo">
+                <img src="./img/avatar.png" alt="">
+              </div>
+              <span class="testimonials__name">Евгений</span>
+              <p class="testimonials__comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, facilis cumque deleniti veritatis quibusdam voluptatibus. Eum neque illum, repudiandae quasi commodi molestias a est beatae, quod, perspiciatis aliquid ab natus.</p>
+            </div>
+          </div>
+          <a class="testimonials__slide-prev" onclick="minusSlide()">&#10094;</a>
+          <a class="testimonials__slide-next" onclick="plusSlide()">&#10095;</a>
+        </div>
+        <div class="testimonials__dots">
+            <span class="testimonials__dot" onclick="currentSlide(1)"></span> 
+            <span class="testimonials__dot" onclick="currentSlide(2)"></span> 
+            <span class="testimonials__dot" onclick="currentSlide(3)"></span> 
+        </div>
+      </div>
+    </section>
+    <section id="promo2" class="promo">
+      <div class="container promo2__container promo2__container_bg">
+        <div class="promo2__product">
+          <div class="promo__content">
+            <div class="promo__image">
+              <img src="./img/prod.png" alt="LevelUp">
+            </div>
+            <div class="promo__description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium assumenda, at dolorum ducimus eius et hic impedit itaque libero molestiae odit, quae quas rerum saepe sed similique veniam voluptates!</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse molestiae excepturi repellat voluptates rem magni natus quos autem? Quidem ducimus et dolorem. Voluptatum exercitationem dolore esse consectetur laudantium cupiditate quo.</p>
+            </div>
+          </div>
+          <div class="promo__specifications_line">
+            <ul class="promo__list">
+              <li class="promo__item_line">Быстрый</li>
+              <li class="promo__item_line">Сильный</li>
+              <li class="promo__item_line">Надежный</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="order" class="order">
+      <div class="container order__container">
+        <div class="order__name">
+          <h2 class="promo2__name">“LevelUp”. <br> Продукт для повышения потенции.</h2>
+        </div>
+        <div class="order__stock">
+          <span class="order__description">Закажи прямо сейчас!</span>
+          <div id="timer" class="order__timer"></div>
+        </div>
+        <div class="order__content">
+          <div class="order__product">
+            <div class="order__photo">
+              <img src="./img/doctor.png" alt="LevelUp">
+            </div>
+            <div class="order__price">
+              <p class="order__price-old">5000 рублей</p>
+              <p class="order__price-new">2400 рублей</p>
+            </div>
+          </div>
+          <form class="order__form" method="post" name="order_form" action="">
+            <ul class="order__list">
+              <li class="order__item">
+              <h2 class="order__title">Оставьте заявку. <br> Почувствуйте силу природы!</h2>
+              </li>
+              <li class="order__item">
+              <input type="text" name="name" placeholder="Евгений"/>
+              </li>
+              <li class="order__item">
+                <input id="only-num" type="phone" name="phone" placeholder="89999999999"/>
+              </li>
+              <li class="order__item">
+                <button class="order__btn" type="submit">Сделать заказ</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./js/slider.js"></script>
+  <script src="./js/timer.js"></script>
+  <script src="./js/input.js"></script>
+  <script src="./js/burger.js"></script>
+</body>
+</html>
