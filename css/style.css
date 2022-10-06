@@ -32,7 +32,7 @@ img {
   z-index: 10;
   position: fixed;
   right: 0;
-  margin: 0 10vw 0 0;
+  margin: 0 15rem 0 0;
   font-size: 32px;
   width: 205px;
   padding: 10px;
@@ -475,48 +475,11 @@ body._lock {
 
 /*======================================== ADAPTIVE ===============================================*/
 
-@media all and (max-width: 2200px) {
-  .container {
-    max-width: 1400px;
-  }
-
-  .promo__bgvideo {
-    max-width: 1400px;
-  }
-
+@media all and (max-width: 2339px) {
   .anchor__btn {
-    font-size: 20px;
-    width: 150px;
-    margin: 0 150px 0 0;
-  }
-
-  .promo__container {
-    padding: 110px 0 87px 0;
-  }
-
- .promo__image-product {
-   width: 200px;
- }
-
-  .promo__item {
-    font-size: 30px;
-  }
-
-  .composition__product {
-    width: auto;
-  }
-
-  .composition__image_product {
-    width: auto;
-  }
-
-  .order__photo {
-    width: 400px;
-    margin: 0;
-  }
-
-  .order__content {
-    justify-content: space-evenly;
+    font-size: 16px;
+    width: 120px;
+    margin: 0 1rem 0 0;
   }
 }
 
@@ -532,7 +495,7 @@ body._lock {
   .anchor__btn {
     font-size: 16px;
     width: 120px;
-    margin: 0 30px 0 0;
+    margin: 0 1.9rem 0 0;
   }
 
   .promo__container {
@@ -711,6 +674,7 @@ body._lock {
     width: 115px;
     transform: rotate(270deg) translateY(30px) translateX(50px);
     margin: 0 0 0 0;
+    padding: 5px;
   }
 
   .header__item {
