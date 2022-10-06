@@ -28,6 +28,10 @@ img {
   width: 100%;
 }
 
+.promo__bgvideo {
+  width: 100%;
+}
+
 .anchor__btn {
   z-index: 10;
   position: fixed;
@@ -474,27 +478,25 @@ body._lock {
 
 /*======================================== ADAPTIVE ===============================================*/
 
+@media (min-width: 2340px) {
+  .promo__bgvideo {
+    max-width: 1920px;
+  }
+}
+
 @media all and (max-width: 2339px) {
   .anchor__btn {
     font-size: 16px;
     width: 120px;
-    margin: 0 1rem 0 0;
+    margin: 0 2rem 0 0;
   }
 }
 
 @media all and (max-width: 1367px) {
-  .container {
-    max-width: 1200px;
-  }
-
-  .promo__bgvideo {
-    max-width: 1200px;
-  }
-
   .anchor__btn {
     font-size: 16px;
     width: 120px;
-    margin: 0 1.9rem 0 0;
+    margin: -1rem 0.5rem 0 0;
   }
 
   .promo__container {
@@ -519,6 +521,47 @@ body._lock {
 
   .composition__image_product {
     width: auto;
+  }
+
+  .promo__content {
+    padding: 0 0 10px 0;
+  }
+
+  .promo__item {
+    font-size: 32px;
+  }
+
+  .promo__image-product {
+    width: 200px;
+  }
+
+  .composition__product {
+    width: auto;
+  }
+
+  .composition__image_product {
+    width: 250px;
+  }
+
+  .composition__image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .composition__name {
+    font-size: 22px;
+  }
+
+  .testimonials__slider {
+    max-width: 800px;
+  }
+
+  .order__content {
+    justify-content: space-evenly;
+  }
+
+  .order__photo {
+    width: 350px;
   }
 }
 
@@ -570,6 +613,10 @@ body._lock {
 
   .composition__image_product {
     width: auto;
+  }
+
+  .testimonials__slider {
+    max-width: 800px;
   }
 
   .order__photo {
@@ -776,7 +823,7 @@ body._lock {
   }
 }
 
-@media all and (max-width: 479px) {
+@media (max-width: 479px) {
   .anchor__btn {
     font-size: 20px;
     margin: 5px 0 0 5px;
@@ -1021,7 +1068,8 @@ body._lock {
   }
 }
 
-@media all and (max-width: 376px) {
+@media all and (max-width: 375px) {
+
   .anchor__btn {
     font-size: 20px;
     margin: 5px 0 0 5px;
@@ -1033,7 +1081,7 @@ body._lock {
   }
 
   .promo__container {
-    padding: 1.5px 0 1.5px 0;
+    padding: 9px 0 5px 0;
   }
 
   .promo__name {
