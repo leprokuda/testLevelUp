@@ -1,3 +1,5 @@
+/* ========================== GENERAL STYLE ============================= */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
 
 * {
@@ -62,13 +64,15 @@ body._lock {
 	overflow: hidden;
 }
 
-/* ========================== GENERAL STYLE ============================= */
+/* ======================================== DESKTOP =========================================== */
 
 .container {
   max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
 }
+
+/* ======================= HEADER ========================= */
 
 .header__container {
   height: 90px;
@@ -98,6 +102,8 @@ body._lock {
 .header__link:hover {
   color: #c38d9d;
 }
+
+/* ======================= PROMO 1 ========================= */
 
 .promo {
   position: relative;
@@ -156,8 +162,9 @@ body._lock {
   font-weight: 500;
   font-size: 44px;
 }
-.composition {
-}
+
+/* ======================= COMPOSITION ========================= */
+
 .composition__container {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -166,6 +173,7 @@ body._lock {
   align-items: center;
   background-image: linear-gradient(180deg, #a8edea 0%, #fed6e3 100%);
 }
+
 .composition__ingredients {
   display: flex;
   flex-direction: column;
@@ -183,6 +191,7 @@ body._lock {
 .composition__ingredient:not(:last-child) {
   margin-bottom: 50px;
 }
+
 .composition__image {
   max-width: 220px;
   height: 220px;
@@ -203,6 +212,8 @@ body._lock {
 .composition__product {
   width: 450px;
 }
+
+/* ======================= TESTIMONIALS ========================= */
 
 .testimonials__container {
   padding-top: 80px;
@@ -311,6 +322,8 @@ body._lock {
   }
 }
 
+/* ======================= PROMO 2 ========================= */
+
 .promo2__container_bg {
   background-image: url('../img/promo_bg.webp');
 }
@@ -322,6 +335,15 @@ body._lock {
 
 .promo2__product {
   padding-top: 100px;
+}
+
+.promo2__name {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-weight: 900;
+  font-size: 40px;
+  color: #6d3d71;
 }
 
 .promo__description {
@@ -350,6 +372,8 @@ body._lock {
 .promo__item_line:not(:last-child) {
   margin-right: 50px;
 }
+
+/* ======================= ORDER ========================= */
 
 .order .promo__name {
   color: black;
@@ -383,17 +407,6 @@ body._lock {
   font-weight: 900;
   color: rgba(255, 0, 0, 0.72);
 }
-.order__name {
-}
-
-.promo2__name {
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  font-weight: 900;
-  font-size: 40px;
-  color: #6d3d71;
-}
 
 .order__content {
   display: flex;
@@ -405,13 +418,16 @@ body._lock {
   width: 500px;
   margin-bottom: 50px;
 }
+
 .order__price {
   text-align: center;
 }
+
 .order__price-old {
   text-decoration: line-through;
   font-size: 32px;
 }
+
 .order__price-new {
   font-size: 46px;
   color: red;
@@ -422,9 +438,7 @@ body._lock {
   margin-bottom: 20px;
   font-weight: 500;
 }
-.order__form {
 
-}
 .order__list {
   background: rgba(195, 141, 157, 0.35);
   padding: 20px;
@@ -456,6 +470,8 @@ body._lock {
   display: flex;
   justify-content: center;
 }
+
+/*======================================== ADAPTIVE ===============================================*/
 
 @media all and (min-width: 1094px) and (max-width: 1920px) {
   .anchor__btn {
@@ -1053,7 +1069,7 @@ body._lock {
   }
 
   .promo__image-product {
-    width: auto;
+    width: 90px;
   }
 
   .promo__description {
