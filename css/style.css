@@ -32,13 +32,14 @@ img {
   z-index: 10;
   position: fixed;
   right: 0;
-  margin: 100px 245px 0 0;
+  margin: 0 10vw 0 0;
   font-size: 32px;
   width: 205px;
   padding: 10px;
   border-radius: 10px;
   border: #c38d9d solid 4px;
   color: #c38d9d;
+  background-color: white;
 }
 
 .anchor__btn:hover {
@@ -53,6 +54,7 @@ img {
   border-radius: 10px;
   border: #40b3a2 solid 2px;
   color: #40b3a2;
+  background-color: white;
 }
 
 .order__btn:hover {
@@ -474,10 +476,18 @@ body._lock {
 /*======================================== ADAPTIVE ===============================================*/
 
 @media all and (max-width: 2200px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .promo__bgvideo {
+    max-width: 1400px;
+  }
+
   .anchor__btn {
     font-size: 20px;
     width: 150px;
-    margin: 0 15px 0 0;
+    margin: 0 150px 0 0;
   }
 
   .promo__container {
@@ -511,10 +521,18 @@ body._lock {
 }
 
 @media all and (max-width: 1367px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .promo__bgvideo {
+    max-width: 1200px;
+  }
+
   .anchor__btn {
     font-size: 16px;
     width: 120px;
-    margin: 0 0 0 0;
+    margin: 0 30px 0 0;
   }
 
   .promo__container {
