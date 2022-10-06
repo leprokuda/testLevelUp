@@ -32,7 +32,7 @@ img {
   z-index: 10;
   position: fixed;
   right: 0;
-  margin: 100px 215px 0 0;
+  margin: 100px 245px 0 0;
   font-size: 32px;
   width: 205px;
   padding: 10px;
@@ -119,7 +119,7 @@ body._lock {
 .promo__container {
   border-bottom: #C38D9DFF solid 2px;
   padding-bottom: 12%;
-  padding-top: 7%;
+  padding-top: 5%;
 }
 
 .promo__product-bg {
@@ -366,7 +366,7 @@ body._lock {
   display: inline;
   font-weight: 900;
   font-size: 30px;
-  color: #7fc6b8;
+  color: #c38d9d;
 }
 
 .promo__item_line:not(:last-child) {
@@ -473,7 +473,7 @@ body._lock {
 
 /*======================================== ADAPTIVE ===============================================*/
 
-@media all and (min-width: 1094px) and (max-width: 1920px) {
+@media all and (max-width: 2200px) {
   .anchor__btn {
     font-size: 20px;
     width: 150px;
